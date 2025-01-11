@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Application Status{% endblock %}
+
+{% block content %}
+<h2>Your Application Status</h2>
+<ul>
+    {% for application in applications %}
+        <li>
+            <strong>{{ application.name }}</strong> - {{ application.status }}
+        </li>
+    {% empty %}
+        <p>No applications found.</p>
+    {% endfor %}
+</ul>
+{% endblock %}

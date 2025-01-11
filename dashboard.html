@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<h3>Submit Your Application</h3>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit Application</button>
+</form>
+<h3>Your Applications</h3>
+<ul>
+    {% for application in applications %}
+        <li>
+            {{ application.name }} - {{ application.status }}
+        </li>
+    {% empty %}
+        <p>No applications submitted yet.</p>
+    {% endfor %}
+</ul>
+{% endblock %}
