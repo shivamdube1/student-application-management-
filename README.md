@@ -1,4 +1,3 @@
-# student-application-management-
 # Student Applications Management System
 
 This project is a Django-based web application designed to handle student applications. The system allows students to register, log in, submit their application details, and upload required documents. Administrators can review applications, approve or disapprove them, and manage the application process seamlessly.
