@@ -119,9 +119,6 @@ student_applications/
 - Enhance the user interface with modern frontend frameworks (e.g., React or Bootstrap).
 - Add support for exporting application data to CSV/Excel.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
 ## Contact
 
